@@ -4,17 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MovieComponent } from './movie/movie.component';
+import { HomeComponent } from './home/home.component';
+import { Movies } from './services/movies.service';
+
+import { RouterModule } from '@angular/router';
+import { routes } from './routes';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovieComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [Movies],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

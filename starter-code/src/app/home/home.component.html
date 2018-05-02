@@ -1,0 +1,24 @@
+<h1>Movies Home</h1>
+
+<div class="padre">
+  <div *ngFor="let e of movies" class="hijo">
+    <h3>Room: {{e.room}}</h3>
+    <img src="{{e.poster}}" alt="" width="250" height="400">
+    <h3>{{e.title}} </h3>
+    <p>{{e.year}}</p>
+    <p>{{e.director}}</p>
+    <p>{{e.synopsis}}</p>
+    <button (click)="viewDetails(e.id)">Show more...</button>
+  </div>
+</div>
+
+
+<!-- <ul *ngFor="let i of e.actors">Actors
+    <li>
+    {{i}}
+    </li>
+  </ul>
+  <ul *ngFor="let i of e.hours">Hours
+    <li>{{i}}</li>
+  </ul>
+  <li>{{e.room}}</li> -->

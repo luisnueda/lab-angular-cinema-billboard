@@ -1,0 +1,23 @@
+<div class="padre">
+  <div class="hijo">
+    <button (click)='goHome()'>Go Home</button>
+  <h1>{{movieDetail.title}}</h1>
+  <p>{{movieDetail.year}}</p>
+  <p>{{movieDetail.director}}</p>
+  <img src="{{movieDetail.poster}}" alt="">
+  <p>{{movieDetail.synopsis}}</p>
+  <h3>Genres</h3>
+  <div *ngFor="let i of movieDetail.genres">
+      <p>{{i}}</p>
+  </div>
+  <h3>Actors</h3>
+    <div *ngFor="let i of movieDetail.actors">
+    <p>{{i}}</p>
+    </div>
+    <h3>Hours</h3>
+    <div *ngFor="let i of movieDetail.hours">
+          <p>{{i}}</p>
+    </div>
+  </div>
+</div>
+<!-- <button><a [routerLink]="['/home']">HOME</a></button> -->

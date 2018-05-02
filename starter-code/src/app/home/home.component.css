@@ -1,0 +1,14 @@
+.padre{
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+.hijo{
+  width: 30%;
+  background-color: #756C4C;
+  margin: 2%;
+}
+h1{
+  text-align: center;
+}

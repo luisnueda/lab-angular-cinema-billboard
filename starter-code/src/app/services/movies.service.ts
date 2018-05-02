@@ -13,7 +13,7 @@ export class Movies {
     return this.movies;
   }
   getMovie(id) {
-    return this.movies.filter(  e => e.id === id);
+    return this.movies[id];
   }
 
 }
